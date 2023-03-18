@@ -132,7 +132,7 @@ List.findOneAndUpdate({name:listname},{$pull:{items:{_id:checkboxid}}}).then(fun
 
     
 
-app.listen(3000, function () {
+app.listen(process.env.PORT, function () {
     console.log("server started on server 4000");
 });
 
